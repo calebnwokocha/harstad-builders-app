@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "HarstadBuildersAppProject",
+    "slug": "HarstadBuildersAppProject",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app_icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "ios": {
+      "requireFullScreen": true,
+      "supportsTablet": true,
+      "bundleIdentifier": "com.harstadbuilders.app",
+      "buildNumber": "1.0.0"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app_icon.png",
+        "backgroundColor": "#fff"
+      },
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/app_icon.png"
+    }
+  },
+  "name": "HarstadBuildersAppProject"
+}
