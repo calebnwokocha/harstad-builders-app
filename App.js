@@ -1,14 +1,13 @@
 import React from 'react';
 import{ Image } from 'react-native';
 import { Component } from 'react/cjs/react.production.min';
-import HomePage from './home';
-import ProfilePage from './profile';
-import PP_One from './pp_one';
-import PP_Two from './pp_two';
-import AboutPage from './about';
-import ReviewPage from './review';
-//import CreateDatabase from './database';
-import styles from './styles';
+import HomePage from './scripts/home';
+import ProfilePage from './scripts/profile';
+import PP_One from './scripts/pp_one';
+import PP_Two from './scripts/pp_two';
+import AboutPage from './scripts/about';
+import ReviewPage from './scripts/review';
+import styles from './scripts/styles';
 import * as ScreenOrientation from 'expo-screen-orientation';
 
 // For screen navigation control buttons

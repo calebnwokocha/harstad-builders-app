@@ -12,7 +12,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Kitchen'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/kitchen.png')} 
+                    <ImageBackground source={require('../assets/kitchen.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Kitchen</Text>
                     </ImageBackground>
@@ -22,7 +22,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Dinning Room'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/dinning_room.png')} 
+                    <ImageBackground source={require('../assets/dinning_room.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Dinning Room</Text>
                     </ImageBackground>
@@ -34,7 +34,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Fireplace'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/fireplace.png')} 
+                    <ImageBackground source={require('../assets/fireplace.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Fireplace</Text>
                     </ImageBackground>                    
@@ -44,7 +44,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Living Room'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/living_room.png')} 
+                    <ImageBackground source={require('../assets/living_room.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Living Room</Text> 
                     </ImageBackground>       
@@ -56,7 +56,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Bathroom'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/bathroom.png')} 
+                    <ImageBackground source={require('../assets/bathroom.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Bathroom</Text>
                     </ImageBackground> 
@@ -66,7 +66,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Shower'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/shower.png')} 
+                    <ImageBackground source={require('../assets/shower.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Shower</Text> 
                     </ImageBackground> 
@@ -78,7 +78,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Modern Bathroom'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/modern_bathroom.png')} 
+                    <ImageBackground source={require('../assets/modern_bathroom.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Modern Bathroom</Text> 
                     </ImageBackground> 
@@ -88,7 +88,7 @@ const PP_One = ({navigation}) => {
                 style={styles.ppOneButton}
                 accessibilityLabel='Attic'
                 onPress={() => navigation.navigate('PP_Two')}>
-                    <ImageBackground source={require('./assets/attic.png')} 
+                    <ImageBackground source={require('../assets/attic.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Attic</Text> 
                     </ImageBackground> 

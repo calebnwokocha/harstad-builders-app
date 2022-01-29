@@ -8,7 +8,7 @@ import styles from './styles';
 const HomePage = ({ navigation }) => {
     return (
       <View style={styles.homeContainer}>
-        <ImageBackground source={require('./assets/home_background.jpg')} 
+        <ImageBackground source={require('../assets/home_background.jpg')} 
         resizeMode='cover'imageStyle= {{opacity:0.2}} style={styles.backgroundImage}>
             <SafeAreaView style={styles.homeUserArea}>
               <Text style={styles.text}>Welcome to Hårstad Builders</Text>
@@ -31,7 +31,7 @@ const HomePage = ({ navigation }) => {
               <TouchableOpacity
               accessibilityLabel='About Harstad Builders'
               onPress={() => navigation.navigate('About')}>
-              <Image source={require('./assets/info_icon.png')} 
+              <Image source={require('../assets/info_icon.png')} 
               style={styles.aboutButton}/>
               </TouchableOpacity> 
             </SafeAreaView>
