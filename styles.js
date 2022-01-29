@@ -71,14 +71,14 @@ const styles = StyleSheet.create({
     },
 
 
-    projectStepOneContainer1: {
+    ppOneContainer1: {
         flex: 1,
         backgroundColor: '#fff',
         fontFamily: 'AvenirNext-Regular',
         flexDirection: 'row',
     },
   
-    projectStepOneContainer2: {
+    ppOneContainer2: {
       flex: 1,
       backgroundColor: '#fff',
       fontFamily: 'AvenirNext-Regular',
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
     },
 
-    projectStepOneContainer3: {
+    ppOneContainer3: {
       flex: 1,
       backgroundColor: '#fff',
       fontFamily: 'AvenirNext-Regular',
@@ -94,44 +94,13 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
     },
 
-    projectStepOneContainer4: {
+    ppOneContainer4: {
       flex: 1,
       backgroundColor: '#fff',
       fontFamily: 'AvenirNext-Regular',
       marginTop: (windowHeight - 50) / 4,
       flexDirection: 'row',
     }, 
-
-    projectStepTwoContainer1: {
-      flex: 1,
-      backgroundColor: '#fff',
-      fontFamily: 'AvenirNext-Regular',
-      flexDirection: 'row',
-  },
-
-  projectStepTwoContainer2: {
-    flex: 1,
-    backgroundColor: '#fff',
-    fontFamily: 'AvenirNext-Regular',
-    marginTop: (windowHeight - 500) / 4,
-    flexDirection: 'row',
-  },
-
-  projectStepTwoContainer3: {
-    flex: 1,
-    backgroundColor: '#fff',
-    fontFamily: 'AvenirNext-Regular',
-    marginTop: (windowHeight - 500) / 4,
-    flexDirection: 'row',
-  },
-
-  projectStepTwoContainer4: {
-    flex: 1,
-    backgroundColor: '#fff',
-    fontFamily: 'AvenirNext-Regular',
-    marginTop: (windowHeight - 500) / 4,
-    flexDirection: 'row',
-  }, 
 
     // Button text style
     buttonText: {
@@ -141,18 +110,18 @@ const styles = StyleSheet.create({
     },
 
     // Project button style
-    projectStepOneButton: {
+    ppOneButton: {
         width: windowWidth / 2,
         height: (windowHeight - 50) / 4,
         backgroundColor: '#63523F',
     },
 
-    projectStepTwo: {
+    ppTwo: {
       margin: 30,
       marginTop: windowHeight / 11,
     },
 
-    projectStepTwoText: {
+    ppTwoText: {
       fontSize: 20,
       fontFamily: 'AvenirNext-Regular',
       paddingBottom: 10,
@@ -162,7 +131,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#63523F',
     },
 
-    PST_TextInput: {
+    ppTwoTextInput: {
       marginTop: 20,
       height: 100,
       paddingTop: 5,
@@ -174,7 +143,7 @@ const styles = StyleSheet.create({
       borderRadius: 5,
     },
 
-    PST_Button: {
+    ppTwoButton: {
       padding: 10,
       marginTop: 40,
       borderRadius: 5,

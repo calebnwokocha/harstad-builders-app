@@ -3,8 +3,8 @@ import{ Image } from 'react-native';
 import { Component } from 'react/cjs/react.production.min';
 import HomePage from './home';
 import ProfilePage from './profile';
-import ProjectPageOne from './project_step_1';
-import ProjectPageTwo from './project_step_2';
+import PP_One from './pp_one';
+import PP_Two from './pp_two';
 import AboutPage from './about';
 import ReviewPage from './review';
 //import CreateDatabase from './database';
@@ -48,8 +48,8 @@ export default function App() {
         />
 
         <Stack.Screen
-          name='ProjectStepOne' 
-          component={ProjectPageOne}
+          name='PP_One' 
+          component={PP_One}
           options={{
             title: 'Select area',
             headerStyle: {
@@ -64,8 +64,8 @@ export default function App() {
         />
 
         <Stack.Screen
-          name='ProjectStepTwo' 
-          component={ProjectPageTwo}
+          name='PP_Two' 
+          component={PP_Two}
           options={{
             title: 'Services',
             headerStyle: {

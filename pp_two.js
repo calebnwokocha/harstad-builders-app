@@ -6,10 +6,9 @@ import styles from './styles';
 import { useLayoutEffect, useEffect } from 'react';
 import SelectBox from 'react-native-multi-selectbox'
 import { xorBy } from 'lodash'
-//import { TextInput } from 'react-native-paper';
 import {LogBox} from 'react-native';
 
-const ProjectPageTwo = ({navigation}) => {
+const PP_Two = ({navigation}) => {
   useLayoutEffect(() => {
       navigation.setOptions({
         headerRight: () => (
@@ -144,7 +143,7 @@ const ProjectPageTwo = ({navigation}) => {
   const [selectedServices, setSelectedServices] = useState([])
     
   return (
-    <View style={styles.projectStepTwo}>
+    <View style={styles.ppTwo}>
       <ScrollView 
       keyboardDismissMode='on-drag'
       scrollEnabled={false}>
@@ -160,7 +159,7 @@ const ProjectPageTwo = ({navigation}) => {
           hideInputFilter={false}
         /> */}
         
-        <Text style={styles.projectStepTwoText}>What should we do for you?</Text>
+        <Text style={styles.ppTwoText}>What should we do for you?</Text>
         <SelectBox
           label="Pick from the list"
           options={services}
@@ -174,7 +173,7 @@ const ProjectPageTwo = ({navigation}) => {
           multiOptionContainerStyle={styles.multiOptionContainer}
           />
         <TextInput 
-          style={styles.PST_TextInput} 
+          style={styles.ppTwoTextInput} 
           placeholder='Add note'
           multiline={true}
           numberOfLines={10}
@@ -184,7 +183,7 @@ const ProjectPageTwo = ({navigation}) => {
       </ScrollView>
 
       <TouchableOpacity
-          style={styles.PST_Button}
+          style={styles.ppTwoButton}
           accessibilityLabel='Review project'
           onPress={() => navigation.navigate('Review')}>
           <Text style={styles.buttonText}>Review project</Text> 
@@ -201,4 +200,4 @@ const ProjectPageTwo = ({navigation}) => {
   } */
 }
 
-export default ProjectPageTwo;
+export default PP_Two;

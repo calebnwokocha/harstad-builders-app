@@ -17,7 +17,7 @@ const HomePage = ({ navigation }) => {
               <TouchableOpacity
               style={styles.homeButton}
               accessibilityLabel='Start a project'
-              onPress={() => navigation.navigate('ProjectStepOne')}>
+              onPress={() => navigation.navigate('PP_One')}>
               <Text style={styles.buttonText}>Start a project</Text> 
               </TouchableOpacity> 
       

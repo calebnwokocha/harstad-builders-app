@@ -4,14 +4,14 @@ import { View, Text, TouchableOpacity,
 import { Component } from 'react/cjs/react.production.min';
 import styles from './styles';
 
-const ProjectPageOne = ({navigation}) => {
+const PP_One = ({navigation}) => {
     return (
         <View>
-            <SafeAreaView style={styles.projectStepOneContainer1}>
+            <SafeAreaView style={styles.ppOneContainer1}>
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Kitchen'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/kitchen.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Kitchen</Text>
@@ -19,9 +19,9 @@ const ProjectPageOne = ({navigation}) => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Dinning Room'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/dinning_room.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Dinning Room</Text>
@@ -29,11 +29,11 @@ const ProjectPageOne = ({navigation}) => {
                 </TouchableOpacity>
             </SafeAreaView>
 
-            <SafeAreaView style={styles.projectStepOneContainer2}>
+            <SafeAreaView style={styles.ppOneContainer2}>
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Fireplace'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/fireplace.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Fireplace</Text>
@@ -41,9 +41,9 @@ const ProjectPageOne = ({navigation}) => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Living Room'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/living_room.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Living Room</Text> 
@@ -51,11 +51,11 @@ const ProjectPageOne = ({navigation}) => {
                 </TouchableOpacity>
             </SafeAreaView>
 
-            <SafeAreaView style={styles.projectStepOneContainer3}>
+            <SafeAreaView style={styles.ppOneContainer3}>
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Bathroom'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/bathroom.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Bathroom</Text>
@@ -63,9 +63,9 @@ const ProjectPageOne = ({navigation}) => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Shower'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/shower.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Shower</Text> 
@@ -73,11 +73,11 @@ const ProjectPageOne = ({navigation}) => {
                 </TouchableOpacity>
             </SafeAreaView>
 
-            <SafeAreaView style={styles.projectStepOneContainer4}>
+            <SafeAreaView style={styles.ppOneContainer4}>
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Modern Bathroom'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/modern_bathroom.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Modern Bathroom</Text> 
@@ -85,9 +85,9 @@ const ProjectPageOne = ({navigation}) => {
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                style={styles.projectStepOneButton}
+                style={styles.ppOneButton}
                 accessibilityLabel='Attic'
-                onPress={() => navigation.navigate('ProjectStepTwo')}>
+                onPress={() => navigation.navigate('PP_Two')}>
                     <ImageBackground source={require('./assets/attic.png')} 
                         resizeMode='cover'imageStyle= {{opacity:0.3}} style={styles.backgroundImage}>
                         <Text style={styles.buttonText}>Attic</Text> 
@@ -98,4 +98,4 @@ const ProjectPageOne = ({navigation}) => {
     );
   };
   
-export default ProjectPageOne;
+export default PP_One;
