@@ -1,6 +1,6 @@
-import React from 'react';
+import {React, Component} from 'react';
 import{ Image } from 'react-native';
-import { Component } from 'react/cjs/react.production.min';
+//import { Component } from 'react/cjs/react.production.min';
 import HomePage from './scripts/home';
 import ProfilePage from './scripts/profile';
 import PP_One from './scripts/pp_one';
@@ -20,7 +20,7 @@ function logoTitle() {
   return (
     <Image
       style={styles.logo}
-      source={require('./assets/logo.png')}
+      source={require('./assets/images/logo.png')}
     />
   );
 }
@@ -28,7 +28,7 @@ function logoTitle() {
 export default function App() {
   // Disable auto-rotation of app UI
   ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.PORTRAIT);
-  
+
   return (
     // Allow switching of multiple screens
     <NavigationContainer>
@@ -40,7 +40,7 @@ export default function App() {
             headerTitle: () => logoTitle(), 
             headerStyle: {
               backgroundColor: '#63523F',
-              fontFamily: 'AvenirNext-Regular',
+              //fontFamily: 'AvenirNext_Regular',
               fontWeight: 'bold',
             },
           }}
@@ -56,7 +56,7 @@ export default function App() {
             },
             headerTitleStyle: {
               color: '#fff',
-              fontFamily: 'AvenirNext-Regular',
+              //fontFamily: 'AvenirNext_Regular',
               fontWeight: 'bold',
             },
           }}
@@ -72,7 +72,7 @@ export default function App() {
             },
             headerTitleStyle: {
               color: '#fff',
-              fontFamily: 'AvenirNext-Regular',
+              //fontFamily: 'AvenirNext_Regular',
               fontWeight: 'bold',
             },
           }}
@@ -88,7 +88,7 @@ export default function App() {
             },
             headerTitleStyle: {
               color: '#fff',
-              fontFamily: 'AvenirNext-Regular',
+              //fontFamily: 'AvenirNext_Regular',
               fontWeight: 'bold',
             },
           }}
@@ -104,7 +104,7 @@ export default function App() {
             },
             headerTitleStyle: {
               color: '#000',
-              fontFamily: 'AvenirNext-Regular',
+              //fontFamily: 'AvenirNext_Regular',
               fontWeight: 'bold',
             },
           }}
@@ -120,7 +120,7 @@ export default function App() {
             },
             headerTitleStyle: {
               color: '#fff',
-              fontFamily: 'AvenirNext-Regular',
+              //fontFamily: 'AvenirNext_Regular',
               fontWeight: 'bold',
             },
           }}

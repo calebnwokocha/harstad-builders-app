@@ -8,7 +8,7 @@ import styles from './styles';
 const HomePage = ({ navigation }) => {
     return (
       <View style={styles.homeContainer}>
-        <ImageBackground source={require('../assets/home_background.jpg')} 
+        <ImageBackground source={require('../assets/images/home_background.jpg')} 
         resizeMode='cover'imageStyle= {{opacity:0.2}} style={styles.backgroundImage}>
             <SafeAreaView style={styles.homeUserArea}>
               <Text style={styles.text}>Welcome to Hårstad Builders</Text>
@@ -17,21 +17,14 @@ const HomePage = ({ navigation }) => {
               <TouchableOpacity
               style={styles.homeButton}
               accessibilityLabel='Start a project'
-              onPress={() => navigation.navigate('PP_One')}>
-              <Text style={styles.buttonText}>Start a project</Text> 
-              </TouchableOpacity> 
-      
-              <TouchableOpacity
-              style={styles.homeButton}
-              accessibilityLabel='Go to profile'
               onPress={() => navigation.navigate('ProfilePage')}>
-              <Text style={styles.buttonText}>Go to profile</Text> 
+              <Text style={styles.buttonText}>Start a project</Text> 
               </TouchableOpacity> 
 
               <TouchableOpacity
               accessibilityLabel='About Harstad Builders'
               onPress={() => navigation.navigate('About')}>
-              <Image source={require('../assets/info_icon.png')} 
+              <Image source={require('../assets/images/info_icon.png')} 
               style={styles.aboutButton}/>
               </TouchableOpacity> 
             </SafeAreaView>

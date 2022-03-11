@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Dimensions, Platform } from 'react-native';
 import { withSafeAreaInsets } from 'react-native-safe-area-context';
 import { Component } from 'react/cjs/react.production.min';
 
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
       height: windowHeight,
       flex: 1,
       backgroundColor: '#fff',
-      //justifyContent: 'center',
+      justifyContent: 'center',
     },
 
     backgroundImage: {
@@ -31,13 +31,13 @@ const styles = StyleSheet.create({
     },
 
     homeUserArea: {
-      height: windowHeight / 2.7,
+      height: windowHeight / 4.7,
       width: windowWidth,
     },
   
     // Universal text style
     text: {
-      fontFamily: 'AvenirNext-Regular',
+      //fontFamily: 'AvenirNext_Regular',
       color: '#000',
       marginLeft: (windowWidth / 2) / 2,
     },
@@ -54,51 +54,47 @@ const styles = StyleSheet.create({
     },
 
     aboutButton: {
-      marginTop: windowHeight - 467,
+      ...Platform.select({
+        ios: {
+          marginTop: windowHeight - 435,
+        },
+        android: {
+          marginTop: windowHeight - 495,
+        },
+      }),
       width: 30, 
       height: 30,
       marginLeft: windowWidth - 48,
     },
 
-    submitButton: {
-      padding: 10,
-      marginTop: 500,
-      borderRadius: 5,
-      backgroundColor: '#63523F',
-      borderColor: '#63523F',
-      width: windowWidth / 2,
-      marginLeft: (windowWidth / 2) / 2,
-    },
-
-
     ppOneContainer1: {
-        flex: 1,
+        //flex: 1,
         backgroundColor: '#fff',
-        fontFamily: 'AvenirNext-Regular',
+        //fontFamily: 'AvenirNext_Regular',
         flexDirection: 'row',
     },
   
     ppOneContainer2: {
-      flex: 1,
+      //flex: 1,
       backgroundColor: '#fff',
-      fontFamily: 'AvenirNext-Regular',
-      marginTop: (windowHeight - 50) / 4,
+      //fontFamily: 'AvenirNext_Regular',
+      //marginTop: (windowHeight - 50) / 4,
       flexDirection: 'row',
     },
 
     ppOneContainer3: {
-      flex: 1,
+      //flex: 1,
       backgroundColor: '#fff',
-      fontFamily: 'AvenirNext-Regular',
-      marginTop: (windowHeight - 50) / 4,
+      //fontFamily: 'AvenirNext_Regular',
+      //marginTop: (windowHeight - 50) / 4,
       flexDirection: 'row',
     },
 
     ppOneContainer4: {
-      flex: 1,
+      //flex: 1,
       backgroundColor: '#fff',
-      fontFamily: 'AvenirNext-Regular',
-      marginTop: (windowHeight - 50) / 4,
+      //fontFamily: 'AvenirNext_Regular',
+      //marginTop: (windowHeight - 50) / 4,
       flexDirection: 'row',
     }, 
 
@@ -106,7 +102,7 @@ const styles = StyleSheet.create({
     buttonText: {
       color: '#fff',
       textAlign: 'center',
-      fontFamily: 'AvenirNext-Regular',
+      //fontFamily: 'AvenirNext_Regular',
     },
 
     // Project button style
@@ -123,7 +119,7 @@ const styles = StyleSheet.create({
 
     ppTwoText: {
       fontSize: 20,
-      fontFamily: 'AvenirNext-Regular',
+      //fontFamily: 'AvenirNext_Regular',
       paddingBottom: 10,
     },
 
@@ -202,11 +198,63 @@ const styles = StyleSheet.create({
     },
 
     aboutText: {
-      fontFamily: 'AvenirNext-Regular',
+      //fontFamily: 'AvenirNext_Regular',
       paddingTop: windowHeight - (windowHeight - 10),
       paddingBottom: windowHeight - (windowHeight - 10),
       color: '#000',
     },
+    
+    reviewContainer: {
+      width: windowWidth,
+      height: windowHeight,
+      paddingLeft: windowWidth - (windowWidth - 20),
+      paddingRight: windowWidth - (windowWidth - 20),
+      paddingTop: windowHeight - (windowHeight - 10),
+      paddingBottom: windowHeight - (windowHeight - 10),
+      backgroundColor: '#fff',
+    },
+
+    userInfoContainer: {
+      marginTop: windowHeight - (windowHeight - 5),
+      marginBottom: windowHeight - (windowHeight - 30),
+    },
+
+    heading: {
+      fontWeight: "bold",
+    },
+
+    reviewText_1: {
+      paddingTop: windowHeight - (windowHeight - 10),
+      paddingBottom: windowHeight - (windowHeight - 1),
+    },
+
+    reviewText_2: {
+      paddingTop: windowHeight - (windowHeight - 10),
+      paddingBottom: windowHeight - (windowHeight - 10),
+    },
+
+    reviewText_3: {
+      paddingTop: windowHeight - (windowHeight - 20),
+      paddingBottom: windowHeight - (windowHeight - 10),
+    },
+
+    userScrollable: {
+      height: windowHeight - (windowHeight - 120) 
+    },
+
+    projectScrollable: {
+      height: windowHeight - (windowHeight - 250) 
+    },
+
+    submitButton: {
+      padding: 10,
+      marginTop: 40,
+      borderRadius: 5,
+      backgroundColor: '#63523F',
+      borderColor: '#63523F',
+      width: windowWidth / 2,
+      marginLeft: (windowWidth / 2) / 2.5,
+    }
   });
   
 export default styles;

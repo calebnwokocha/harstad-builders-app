@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View, Text, TouchableOpacity, 
-    Touchable, ImageBackground, SafeAreaView, ScrollView, TextInput} from 'react-native';
+    Touchable, ImageBackground, SafeAreaView, ScrollView, TextInput, Alert} from 'react-native';
 import { Component } from 'react/cjs/react.production.min';
 import styles from './styles';
 import { useLayoutEffect, useEffect } from 'react';
@@ -8,7 +8,7 @@ import SelectBox from 'react-native-multi-selectbox'
 import { xorBy } from 'lodash'
 import {LogBox} from 'react-native';
 
-const PP_Two = ({navigation}) => {
+const PP_Two = ({navigation, route}) => {
   useLayoutEffect(() => {
       navigation.setOptions({
         headerRight: () => (
@@ -21,6 +21,30 @@ const PP_Two = ({navigation}) => {
         ),
       });
   }, [navigation]);
+
+  // Get userData and area from previous page.
+  var projectData = route.params;
+  //console.log(projectData);
+
+  var note = "";
+
+  function updateNote (noteUpdate) {
+    note = noteUpdate;
+  }
+
+  const goToNextScreen = () => {
+
+    // DEBUG RESOURCE
+    console.log(selectedServices);
+
+    // Send projectData, selectedServices, and note to review page
+    // if user select a service. Otherwise, show alert message.
+    if (selectedServices.length != 0) {
+      navigation.push('Review', {projectData, selectedServices, note});
+    } else {
+      Alert.alert("Please select service(s)");
+    }
+  }
 
   useEffect(() => {
     LogBox.ignoreLogs(["VirtualizedLists should never be nested"])
@@ -144,21 +168,7 @@ const PP_Two = ({navigation}) => {
     
   return (
     <View style={styles.ppTwo}>
-      <ScrollView 
-      keyboardDismissMode='on-drag'
-      scrollEnabled={false}>
-        {/*       <View style={{ width: '100%', alignItems: 'center' }}>
-        <Text style={{ fontSize: 30, paddingBottom: 20 }}>Demos</Text>
-        </View>
-        <Text style={{ fontSize: 20, paddingBottom: 10 }}>Select Demo</Text>
-        <SelectBox
-          label="Select single"
-          options={services}
-          value={selectedService}
-          onChange={onChange()}
-          hideInputFilter={false}
-        /> */}
-        
+      <ScrollView keyboardDismissMode='on-drag'scrollEnabled={false}>
         <Text style={styles.ppTwoText}>What should we do for you?</Text>
         <SelectBox
           label="Pick from the list"
@@ -179,13 +189,14 @@ const PP_Two = ({navigation}) => {
           numberOfLines={10}
           textAlignVertical='top'
           scrollEnabled={true}
+          onChangeText={value => updateNote(value)}
         />
       </ScrollView>
 
       <TouchableOpacity
           style={styles.ppTwoButton}
           accessibilityLabel='Review project'
-          onPress={() => navigation.navigate('Review')}>
+          onPress={() => goToNextScreen()}>
           <Text style={styles.buttonText}>Review project</Text> 
       </TouchableOpacity> 
     </View>
