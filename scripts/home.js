@@ -9,11 +9,18 @@ const HomePage = ({ navigation }) => {
     return (
       <View style={styles.homeContainer}>
         <ImageBackground source={require('../assets/images/home_background.jpg')} 
-        resizeMode='cover'imageStyle= {{opacity:0.2}} style={styles.backgroundImage}>
+        resizeMode='cover'imageStyle= {{opacity:0.2}} style={styles.hbackgroundImage}>
             <SafeAreaView style={styles.homeUserArea}>
-              <Text style={styles.text}>Welcome to Hårstad Builders</Text>
+           <Text style={styles.text}>Hi there,</Text> 
               <StatusBar style="auto" />
       
+              <TouchableOpacity
+              style={styles.homeButton}
+              accessibilityLabel='Get Quote'
+              onPress={() => navigation.navigate('ProfilePage')}>
+              <Text style={styles.buttonText}>Get Quote</Text> 
+              </TouchableOpacity> 
+
               <TouchableOpacity
               style={styles.homeButton}
               accessibilityLabel='Start a project'

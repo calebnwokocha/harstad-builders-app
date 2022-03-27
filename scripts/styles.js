@@ -24,6 +24,12 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
 
+    hbackgroundImage: {
+      flex: 1,
+      //justifyContent: 'center',
+      //alignItems: 'center',
+  },
+
     backgroundImage: {
         flex: 1,
         justifyContent: 'center',
@@ -33,24 +39,29 @@ const styles = StyleSheet.create({
     homeUserArea: {
       height: windowHeight / 4.7,
       width: windowWidth,
+      marginTop: 40,
     },
   
     // Universal text style
     text: {
       //fontFamily: 'AvenirNext_Regular',
       color: '#000',
-      marginLeft: (windowWidth / 2) / 2,
+      marginLeft: windowWidth / 20,
     },
 
     // Home button style
     homeButton: {
-      padding: 10,
-      marginTop: 40,
+      //padding: 10,
+      paddingTop: 85,
+      marginTop: 20,
       borderRadius: 5,
       backgroundColor: '#63523F',
       borderColor: '#63523F',
-      width: windowWidth / 2,
-      marginLeft: (windowWidth / 2) / 2,
+      //width: windowWidth / 2,
+      width: windowWidth / 1.1,
+      height: windowHeight / 4,
+      //marginLeft: (windowWidth / 2) / 2,
+      marginLeft: windowWidth / 21,
     },
 
     aboutButton: {
@@ -209,7 +220,7 @@ const styles = StyleSheet.create({
       height: windowHeight,
       paddingLeft: windowWidth - (windowWidth - 20),
       paddingRight: windowWidth - (windowWidth - 20),
-      paddingTop: windowHeight - (windowHeight - 10),
+      paddingTop: windowHeight - (windowHeight - 50),
       paddingBottom: windowHeight - (windowHeight - 10),
       backgroundColor: '#fff',
     },
@@ -217,6 +228,17 @@ const styles = StyleSheet.create({
     userInfoContainer: {
       marginTop: windowHeight - (windowHeight - 5),
       marginBottom: windowHeight - (windowHeight - 30),
+      padding: 10,
+      borderWidth: 1,
+      borderRadius: 5,
+      borderColor: '#63523F',
+    },
+
+    projectInfoContainer: {
+      padding: 10,
+      borderWidth: 1,
+      borderRadius: 5,
+      borderColor: '#63523F',
     },
 
     heading: {
@@ -248,7 +270,7 @@ const styles = StyleSheet.create({
 
     submitButton: {
       padding: 10,
-      marginTop: 40,
+      marginTop: 50,
       borderRadius: 5,
       backgroundColor: '#63523F',
       borderColor: '#63523F',
