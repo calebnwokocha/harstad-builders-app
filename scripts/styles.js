@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     homeUserArea: {
       height: windowHeight / 4.7,
       width: windowWidth,
-      marginTop: 40,
+      marginTop: 25,
     },
   
     // Universal text style
@@ -65,17 +65,8 @@ const styles = StyleSheet.create({
     },
 
     aboutButton: {
-      ...Platform.select({
-        ios: {
-          marginTop: windowHeight - 435,
-        },
-        android: {
-          marginTop: windowHeight - 495,
-        },
-      }),
       width: 30, 
       height: 30,
-      marginLeft: windowWidth - 48,
     },
 
     ppOneContainer1: {

@@ -78,7 +78,7 @@ const ReviewPage = ({navigation, route}) => {
 
       return Linking.openURL(url); */
 
-      Alert.alert("Submitted!");
+      Alert.alert("Submitted! Thank you for working with Hårstad Builders.");
       navigation.push('Home');
     }
 
